@@ -1,80 +1,70 @@
-# Carbon Footprint Calculator
+# Getting Started with Create React App
 
-This project is a full-stack MERN (MongoDB, Express, React, Node.js) application designed to help users manage their personal finances more effectively. It allows authenticated users to log financial activities, such as income and spending, and provides a dashboard to view, update, and delete these entries.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The app also supports:
+## Available Scripts
 
-User authentication (registration, login, logout, protected routes).
+In the project directory, you can run:
 
-Categorization of transactions (e.g., food, utilities, transport, salary).
+### `npm start`
 
-Data visualization (charts and summaries showing spending vs. income).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Editable records (users can update or remove past entries easily).
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Responsive UI for use across desktop and mobile devices.
+### `npm test`
 
-The goal of the Budget Tracker is to give users a clear overview of their financial situation, empowering them to track expenses, identify spending patterns, and make informed budgeting decisions.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Project Setup Instructions
+### `npm run build`
 
-To run this project locally, follow these steps:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### 1\. Prerequisites
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-  - **Node.js**: Ensure you have Node.js and npm installed.
-  - **MongoDB**: You need a running MongoDB instance. This can be a local installation or a cloud-based service like MongoDB Atlas.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### 2\. Clone the Repository
+### `npm run eject`
 
-```sh
-git clone https://github.com/hmn3702/BudgetTracker.git
-cd sdlapps
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### 3\. Install Dependencies
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-This project uses a monorepo-style structure, so you can install all dependencies at once from the root directory.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```sh
-npm run install-all
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-This command will install dependencies for the root, `backend`, and `frontend` directories.
+## Learn More
 
-### 4\. Configure Environment Variables
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Create a `.env` file in the **`backend`** directory. This file should contain your MongoDB connection string and a secret for JWT authentication.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-**`backend/.env`**
+### Code Splitting
 
-```
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-PORT=5001
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-> **Note:** Replace `your_mongodb_connection_string` with your actual MongoDB URI and `your_jwt_secret` with a strong, random string.
+### Analyzing the Bundle Size
 
-### 5\. Run the Application
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-From the root directory, you can start both the backend and frontend with a single command.
+### Making a Progressive Web App
 
-  - **Development Mode**: Runs both servers with `nodemon` for the backend, enabling live reloading.
-    ```sh
-    npm run dev
-    ```
-  - **Production Mode**: Runs the backend with `node` and the frontend in development mode.
-    ```sh
-    npm start
-    ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Once the application is running, the frontend will be accessible at `http://localhost:3000` and the backend API will be running on `http://localhost:5001`.
+### Advanced Configuration
 
-## Public URL of the Project
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-**Public URL**: `http://3.105.255.76/`
+### Deployment
 
-## Access Credentials
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-The development email and password can be provided upon request for dashboard access. For testing purposes, you may also register a new user through the application's registration page.
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
